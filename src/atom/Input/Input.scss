@@ -1,0 +1,9 @@
+.input-container{
+     @apply border border-[1px] border-[lightgray] w-full rounded-[6px] overflow-hidden flex;
+    input{
+        @apply outline-none border-none pl-4 py-4 flex-grow;
+    }
+    &:focus-within{
+        @apply border-red-600;
+    }
+}

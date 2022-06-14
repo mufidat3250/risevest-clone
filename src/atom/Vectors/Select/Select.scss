@@ -1,0 +1,7 @@
+.select-container{
+    @apply flex w-full border-[1px] border-[lightgray] rounded-[6px] ;
+
+    select{
+        @apply flex-grow-[1] pl-4 py-5 border-none outline-none bg-transparent;
+    }
+}
