@@ -358,7 +358,7 @@ const Home = () => {
           </div>
          
          <div className="w-[45%]">
-         <img src="/public/Images/joinedImg.png" alt="" className="object object-cover"/>
+         <img src="/Public/Images/joinedImg.png" alt="" className="object object-cover"/>
          </div>         
          </div>           
       </section>
