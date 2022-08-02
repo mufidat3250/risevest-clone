@@ -53,7 +53,7 @@ const Home = () => {
                       title="Download on the "
                       subtitle="Apple Store"
                       prefixIcon={
-                        <img src="/public/Vectors/google-play-fill.svg" />
+                        <img src="/Public/Vectors/google-play-fill.svg" />
                       }
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
@@ -63,7 +63,7 @@ const Home = () => {
               </div>
               <div className="w-full max-w-max">
                 <img
-                  src="/public/Images/riseAppPhone.png"
+                  src="/Public/Images/riseAppPhone.png"
                   alt=""
                   className="w-[16.01716rem] h-[30.0375rem] drop-shadow-[0_1.60087px_16.0089px_rgba(53,71,87,0.15)] md:text-left riseVestApp"
                 />
@@ -89,27 +89,27 @@ const Home = () => {
         <div className="grid py-10 place-items-center">
           <div className="flex items-center justify-center space-x-8">
             <img
-              src="/public/Images/ARM.png"
+              src="/Public/Images/ARM.png"
               alt=""
               width="115px"
               height="59"
               className="w-[65px] h-[30px] md:w-[115px] md:h-[59px] lg:w-[115px] lg:h-[59px]"
             />
             <img
-              src="/public/Images/westernUnion.png"
+              src="/Public/Images/westernUnion.png"
               width="240px"
               height="120px"
               alt=""
               className="w-[65px] h-[30px] md:w-[220px] md:h-[70px] lg:w-[240px] lg:h-[70px]"
             />
             <img
-              src="/public/Images/techStars.png"
+              src="/Public/Images/techStars.png"
               width="180"
               height="90"
               alt=""
               className="w-[65px] h-[30px] md:w-[180px] md:h-[90px] lg:w-[115px] lg:h-[56px]"
             />
-            <img src="/public/Images/vest.png" alt="" width="70" height="50" 
+            <img src="/Public/Images/vest.png" alt="" width="70" height="50" 
              className="w-[65px] h-[30px] md:w-[70px] md:h-[50px] lg:w-[70px] lg:h-[50px]"
             />
           </div>
@@ -331,7 +331,7 @@ const Home = () => {
         {Investors.map(({reviews, name, img, attr})=>{
            return <div className="card-wrapper">
                  <div className="flex flex-col justify-between flex-grow h-[17rem] p-4">
-                 <p className="text-[15px] leading-7 text-[16px]">{reviews}</p>
+                 <p className="leading-7 text-[16px]">{reviews}</p>
                   <div className="card-img flex items-center gap-x-[1rem]">
                       <img src={img} alt="" className="object-contain w-12 h-12 rounded-full" />
                       <div>
