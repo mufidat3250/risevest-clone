@@ -41,7 +41,7 @@ const Stocks = () => {
     <AssetIcon img='/Public/Images/stocks.png'/> 
        <ProductList title='Stocks' disc='We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks.' riskLevel='High' historyPercent='14'/>      
      </div>
-     <Approach/>
+     <Approach title={''}/>
     <div className='bg-white pt-[6rem]'>
     <div className='container bg-white'>
         <ChooseRise data={gridData} title='Why Choose Rise for Stocks Investment?'/>

@@ -1,6 +1,6 @@
 import React from 'react'
 type approach = {
-  title:string
+  title:string,
 }& React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 const Approach = ({title}:approach) => {
   return (
