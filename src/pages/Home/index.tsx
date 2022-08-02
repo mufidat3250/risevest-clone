@@ -53,7 +53,7 @@ const Home = () => {
                       title="Download on the "
                       subtitle="Apple Store"
                       prefixIcon={
-                        <img src="/Vectors/google-play-fill.svg" />
+                        <img src="/public/Vectors/google-play-fill.svg" />
                       }
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
@@ -63,7 +63,7 @@ const Home = () => {
               </div>
               <div className="w-full max-w-max">
                 <img
-                  src="/Images/riseAppPhone.png"
+                  src="/public/Images/riseAppPhone.png"
                   alt=""
                   className="w-[16.01716rem] h-[30.0375rem] drop-shadow-[0_1.60087px_16.0089px_rgba(53,71,87,0.15)] md:text-left riseVestApp"
                 />
@@ -89,27 +89,27 @@ const Home = () => {
         <div className="grid py-10 place-items-center">
           <div className="flex items-center justify-center space-x-8">
             <img
-              src="/Images/ARM.png"
+              src="/public/Images/ARM.png"
               alt=""
               width="115px"
               height="59"
               className="w-[65px] h-[30px] md:w-[115px] md:h-[59px] lg:w-[115px] lg:h-[59px]"
             />
             <img
-              src="/Images/westernUnion.png"
+              src="/public/Images/westernUnion.png"
               width="240px"
               height="120px"
               alt=""
               className="w-[65px] h-[30px] md:w-[220px] md:h-[70px] lg:w-[240px] lg:h-[70px]"
             />
             <img
-              src="/Images/techStars.png"
+              src="/public/Images/techStars.png"
               width="180"
               height="90"
               alt=""
               className="w-[65px] h-[30px] md:w-[180px] md:h-[90px] lg:w-[115px] lg:h-[56px]"
             />
-            <img src="/Images/vest.png" alt="" width="70" height="50" 
+            <img src="/public/Images/vest.png" alt="" width="70" height="50" 
              className="w-[65px] h-[30px] md:w-[70px] md:h-[50px] lg:w-[70px] lg:h-[50px]"
             />
           </div>
@@ -358,7 +358,7 @@ const Home = () => {
           </div>
          
          <div className="w-[45%]">
-         <img src="/Images/joinedImg.png" alt="" className="object object-cover"/>
+         <img src="/public/Images/joinedImg.png" alt="" className="object object-cover"/>
          </div>         
          </div>           
       </section>
