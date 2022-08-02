@@ -51,7 +51,7 @@ transform:translateY(-15px);
     @apply flex justify-center items-center bg-[cornflowerblue] text-[red] w-[31.25rem] h-[15.625rem]; 
 }
 .isVisible{
-    @apply flex justify-center items-center fixed top-0 w-full p-[2.5rem];
+    @apply flex justify-center items-center absolute top-0 w-full p-[2.5rem];
 }
 .direction{
     background-color: red;
@@ -60,7 +60,7 @@ transform:translateY(-15px);
     @apply w-full  h-full overflow-hidden absolute left-0;
 }
 .animated-box li{
-    @apply list-none w-[1.875rem] h-[1.875rem] block rounded-full bg-[#d4eded] absolute bottom-[9.375rem] -z-10;
+    @apply list-none w-[1.875rem] h-[1.875rem] block rounded-full bg-[#d4eded] absolute bottom-[-9.375rem] -z-10;
     animation: animation 10s linear infinite;
   
 }
@@ -112,13 +112,24 @@ transform:translateY(-15px);
         opacity: 0.5;
     }
 }
-@media (max-width:753px) {
-    .home-container{
+@media (max-width:768px) {
+    .home-container{    
         @apply w-[100%];
     }
     .navtab{
-        @apply hidden;
+        @apply bg-red-400 absolute top-0   ;
+        // visibility: hidden;                           
     }
+    .dropdownModal{
+        @apply hidden;
+        // z-index: 1;
+    }
+    .riseVestApp{
+        @apply overflow-hidden;
+    animation: none;
+    
+    }
+
 }
 
 

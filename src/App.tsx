@@ -22,20 +22,20 @@ function App() {
      
      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="products" element={<Products />} />
+        {/* <Route path="products" element={<Products />} />
         <Route path="investmentClub" element={<InvestmentClub />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="faqs" element={<FAQs />} />
-        <Route path="blog" element={<Blog />} />
+        <Route path="blog" element={<Blog />} /> */}
 
 
-        <Route path='product' >
+        {/* <Route path='product' >
         <Route index element= {<Stocks/>} />
         <Route path = 'real-estate' element={<RealEstate/>}/>
         <Route path = 'fixed-income' element={<FixedIncome/>}/>
         <Route path = 'build-wealth' element={<BuildWealth/>}/>
 
-        </Route>
+        </Route> */}
 
       </Routes>
      

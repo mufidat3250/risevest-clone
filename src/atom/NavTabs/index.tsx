@@ -14,9 +14,7 @@ const NavTab = ({activeTab, tabs, currentPath, setActive=()=>{}}:tab) => {
     <div className='flex cursor-pointer space-x-[2.5rem] text-primary'>
          <span
           onClick={()=>setActive(currentPath)}
-      className={`${
-        '' ? "active":''
-      } flex cursor-pointer gap-x-[4px] items-center`}
+      className={`flex cursor-pointer gap-x-[4px] items-center`}
     >
       {tabs.title} {tabs.url.includes('products') && <ArrowDown/>}
     </span> 

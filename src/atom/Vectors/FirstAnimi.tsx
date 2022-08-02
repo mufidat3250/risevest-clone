@@ -3,7 +3,7 @@ import { SVGProps } from "react"
 
 const FirstAnimi = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    className="grid w-full h-full mdMax:mx-auto mdMax:order-first mdMax:overflow-hidden"
+    className="grid w-full h-full object-contain"
     width={480}
     height={461}
     fill="none"

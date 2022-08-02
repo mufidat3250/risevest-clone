@@ -24,22 +24,21 @@ const Home = () => {
   return (
     <Landingpage>
       <div className="flex flex-col relative">
-        <section className="container h-full overflow-auto ">
-          <div className="m-8 ">
-            <div className="flex justify-between w-full my-14">
-              <div className="flex flex-col space-y-[1.5rem] h-fit mt-8">
-                <div className="max-w-[450px]">
-                  <H1 style={{ color: "#2f98a0" }}>
-                    {" "}
-                    Dollar investments that help you{" "}
+        <section className=" w-[95%] mx-auto md:w-[95%] lg:w-[80%] md:m-auto h-full overflow-auto">
+          <div className="  lg:mx-8">
+            <div className=" flex flex-col space-y-[4rem] justify-center items-center md:flex md:justify-between md:flex-row lg:justify-between lg:flex-row w-full my-14">
+              <div className="flex flex-col space-y-[1.5rem] h-fit ">
+                <div className="md:max-w-[450px] lg:max-w-[450px] max-w-[500px]">
+                  <H1 color="#2f98a0">                    
+                    Dollar investments that help you
                     <span className="grow">grow</span>
                   </H1>
                 </div>
-                <p className="max-w-[500px]">
+                <p className=" max-w-[500px] text-center md:max-w-[500px] lg:max-w-[500px]">
                   We put your money in high quality assets that help you build
                   wealth and achieve your financial goals.
                 </p>
-                <div className="flex gap-x-[1.5rem]">
+                <div className="flex lg:justify-start md:justify-start justify-center gap-x-[1.5rem]">
                   <div className="w-[160px]">
                     <Button
                       title="Download on the"
@@ -66,11 +65,11 @@ const Home = () => {
                 <img
                   src="/Public/Images/riseAppPhone.png"
                   alt=""
-                  className="w-[16.01716rem] h-[30.0375rem] drop-shadow-[0_1.60087px_16.0089px_rgba(53,71,87,0.15)]  riseVestApp"
+                  className="w-[16.01716rem] h-[30.0375rem] drop-shadow-[0_1.60087px_16.0089px_rgba(53,71,87,0.15)] md:text-left riseVestApp"
                 />
               </div>
             </div>
-         <div className="animated-area absolute top-0 w-[80%] h-[11%]">
+         <div className="animated-area absolute top-0 w-[100%] lg:h-[11%] md:h-[11%] h-[16%]">
               <div className="animated-box">
                 <li></li>
                 <li></li>
@@ -94,27 +93,33 @@ const Home = () => {
               alt=""
               width="115px"
               height="59"
+              className="w-[65px] h-[30px] md:w-[115px] md:h-[59px] lg:w-[115px] lg:h-[59px]"
             />
             <img
               src="/Public/Images/westernUnion.png"
               width="240px"
               height="120px"
               alt=""
+              className="w-[65px] h-[30px] md:w-[220px] md:h-[70px] lg:w-[240px] lg:h-[70px]"
             />
             <img
               src="/Public/Images/techStars.png"
               width="180"
               height="90"
               alt=""
+              className="w-[65px] h-[30px] md:w-[180px] md:h-[90px] lg:w-[115px] lg:h-[56px]"
             />
-            <img src="/Public/Images/vest.png" alt="" width="70" height="50" />
+            <img src="/Public/Images/vest.png" alt="" width="70" height="50" 
+             className="w-[65px] h-[30px] md:w-[70px] md:h-[50px] lg:w-[70px] lg:h-[50px]"
+            />
           </div>
         </div>
 
-        <section className="container grid grid-col repeat(4,1fr) space-y-[1.5rem]">
+        <section className="lg:max-w-[80%] lg:mx-auto md:max-w-[95%] md:mx-auto grid grid-col repeat(4,1fr) space-y-[1.5rem]">
           <div className="space-y-[1.5rem]">
-            <div className="grid  mx-8 grid-cols-[1fr,1fr]  mt-12">
-              <div className="w-full flex flex-col justify-center">
+            <div className="grid  lg:mx-8 md:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr] grid-cols-[1fr] mt-12">
+           <div className="order-2 lg:order-1 md:order-1 w-full grid place-items-center ">
+           <div className="w-full flex flex-col justify-center">
                 <div className=" max-w-[450px]">
                   <H2 color="#2d2d2d">Invest your money in dollars</H2>
                   <p className="max-w-[320px] text-[#2d2d2d]">
@@ -141,12 +146,17 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-              <FirstAnimi />
+           </div>
+              
+             <div className="order-1 flex justify-center lg:max-w-[100%] md:max-w-[100%] lg:order-2 md:order-2">
+             <FirstAnimi className="object-center" />
+             </div>
+            
             </div>
             <div className="grid mx-8 grid-cols-[1fr,1fr] ">
               <SecondAnimi />
               <div className="flex flex-col justify-center">
-                <div className="max-w-[450px]">
+                <div className="lg:max-w-[450px] md:max-w-[450px] ">
                   <H2 color="#2d2d2d">Invest your money in dollars</H2>
                   <p className="max-w-[320px] text-[#2d2d2d]">
                     By holding your investments in a stable currency, your money
@@ -234,6 +244,7 @@ const Home = () => {
         </section>
         <div className=" container">
           <div className="space-y-4 py-10">
+            <div className="flex justify-center">
             <H1
               style={{
                 textAlign: "center",
@@ -243,6 +254,7 @@ const Home = () => {
             >
               Asset Classes
             </H1>
+            </div>
             <p className=" text-center text-lg font-medium mx-8">
               It’s your money, choose where you invest it
             </p>
