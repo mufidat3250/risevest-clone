@@ -105,27 +105,27 @@ const Home = () => {
         <div className="grid py-10 place-items-center">
           <div className="flex items-center justify-center space-x-8">
             <img
-              src="/Public/Images/ARM.png"
+              src="/Images/ARM.png"
               alt=""
               width="115px"
               height="59"
               className="w-[65px] h-[30px] md:w-[115px] md:h-[59px] lg:w-[115px] lg:h-[59px]"
             />
             <img
-              src="/Public/Images/westernUnion.png"
+              src="/Images/westernUnion.png"
               width="240px"
               height="120px"
               alt=""
               className="w-[65px] h-[30px] md:w-[220px] md:h-[70px] lg:w-[240px] lg:h-[70px]"
             />
             <img
-              src="/Public/Images/techStars.png"
+              src="/Images/techStars.png"
               width="180"
               height="90"
               alt=""
               className="w-[65px] h-[30px] md:w-[180px] md:h-[90px] lg:w-[115px] lg:h-[56px]"
             />
-            <img src="/Public/Images/vest.png" alt="" width="70" height="50" 
+            <img src="/Images/vest.png" alt="" width="70" height="50" 
              className="w-[65px] h-[30px] md:w-[70px] md:h-[50px] lg:w-[70px] lg:h-[50px]"
             />
           </div>
@@ -238,7 +238,7 @@ const Home = () => {
             </div>
             <div className="grid sm:grid-cols-[1fr,1fr] ">
             <div className="bg-red-300 grid place-items-center h-full">
-            <img src="/Public/Vectors/FourthAnimie.svg" alt="" />
+            <img src="/Vectors/FourthAnimie.svg" alt="" />
             </div>
               <div className="flex flex-col justify-center">
                 <div className="max-w-[450px]">
