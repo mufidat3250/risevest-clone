@@ -64,20 +64,35 @@ const rise = [
     {
       title:'Twitter',
       link:''
-    }
+    },
+
+    {
+      title:'Facebook',
+      link:''
+    },
+
+    {
+      title:'Youtube',
+      link:''
+    },
+
+    {
+      title:'LinkedIn',
+      link:''
+    },
   
   ]
 const Footer = () => {
   return (
-    <footer className="py-20 container">
-    <div className=" mx-8 grid grid-cols-[repeat(4,1fr)] gap-10 h-[20rem]">
+    <footer className="py-20 text-base sm:mx-auto sm:w-[80%] h-full">
+    <div className=" mx-8 grid grid-cols-2 sm:grid-cols-[repeat(4,1fr)] gap-10 h-[20rem]">
             <div className="grid grid-rows-[3.5rem,1fr]">
              <RiseLogo/>
 
               <div className="flex flex-col space-y-[2rem]">
                 {
                   rise.map(({title, link}, index)=>{
-                    return <a key = {index} className='cursor-pointer'>{title}</a>
+                    return <a key = {index} className='sm:text-base text-[12px] cursor-pointer'>{title}</a>
                   })
                 }
               </div>
@@ -89,7 +104,7 @@ const Footer = () => {
               <div className="flex flex-col space-y-[2rem]">
                 {
                   explore.map(({title, link}, index)=>{
-                    return <a key = {index} className='flex items-baseline space-x-3  group cursor-pointer '> <span>{title}</span> <ArrowRightUp /></a>
+                    return <a key = {index} className='flex items-baseline space-x-3  group cursor-pointer '> <span className='sm:text-base text-[12px]'>{title}</span> <ArrowRightUp /></a>
                   })
                 }
               </div>
@@ -100,7 +115,7 @@ const Footer = () => {
               <div className="flex flex-col space-y-[2rem]">
                 {
                   products.map(({title, link}, index)=>{
-                    return <a key = {index} className='flex items-baseline group cursor-pointer'> <span>{title}</span></a>
+                    return <a key = {index} className='flex items-baseline group cursor-pointer'> <span className='sm:text-base text-[12px]'>{title}</span></a>
                   })
                 }
               </div>
@@ -111,7 +126,7 @@ const Footer = () => {
               <div className="flex flex-col space-y-[2rem]">
                 {
                   contact.map(({title, link}, index)=>{
-                    return <a key = {index} className='flex  items-baseline group cursor-pointe space-x-3 cursor-pointer'>  <span>{title}</span> <ArrowRightUp/></a>
+                    return <a key = {index} className='flex  items-baseline group cursor-pointe space-x-3 cursor-pointer'>  <span className='text-[12px] sm:text-base'>{title}</span> <ArrowRightUp/></a>
                   })
                 }
               </div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import { investors } from '../../data';
 
 import Slider from 'react-slick'
-import Stocks from '../../pages/Stocks';
 
   const Sliders = ({children, heading}:{children?:React.ReactNode; heading?:string}) => {
     let settings = {

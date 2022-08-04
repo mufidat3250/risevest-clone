@@ -62,11 +62,11 @@ gsap.from('.img', {
   },[])
 
   return (
-    <div className="mx-8 py-20  z-10 overflow-hidden ">
+    <div className="hidden sm:block sm:mx-8 py-20  z-10 overflow-hidden  ">
             <div className="py-20 bg-[#e6f5f6] px-16 rounded-xl relative overflow-hidden" ref={ref}>
               <div className='jointInvestor' >
                 <p className="mb-[1rem] title">Download The Rise App</p>
-                <h2 className="font font-semibold text-4xl max-w-[500px] mb-[1.5rem] join ">Join our 200,000+ users investing and setting long term goals!</h2>
+                <h2 className="font  text-base font-semibold sm:text-4xl max-w-[500px] mb-[1.5rem] join ">Join our 200,000+ users investing and setting long term goals!</h2>
                 <p className="mb-[1rem] dollar">Dollar investments that help you grow</p>
                 <div className="flex gap-4">
                 <div className="w-[160px] button">

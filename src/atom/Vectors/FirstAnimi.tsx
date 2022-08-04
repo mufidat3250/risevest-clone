@@ -1,11 +1,12 @@
 import * as React from "react"
 import { SVGProps } from "react"
+import "../../pages/Home/HomeStyle.scss"
 
 const FirstAnimi = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    className="grid w-full h-full object-contain"
-    width={480}
-    height={461}
+    // className="svg"
+    width={'100%'}
+    height={'100%'}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

@@ -7,7 +7,7 @@ type H1Prop = {
 
 const H1 = ({children, color, ...otherProp}:H1Prop) => {
   return (
-    <div className='text-[2.5rem] md:text-left lg:text-left text-center font-bold' {...otherProp} style={{color:color}}>{children}</div>
+    <div className=' text-[2rem] sm:text-[2.5rem] md:text-left lg:text-left text-center font-bold' {...otherProp} style={{color:color}}>{children}</div>
   )
 }
 
