@@ -10,7 +10,7 @@ export default [
 export const Asset =[
     {
         bgColor:'#fef4f0',
-        img:'/Public/Images/stocks.png',
+        img:'/Images/stocks.png',
         title:'Stocks',
         subtext:'We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks.',
         history:'14% Per Annum',
@@ -20,7 +20,7 @@ export const Asset =[
     },
     {
         bgColor:'#f6f2fe',
-        img:'/Public/Images/estate.png',
+        img:'/Images/estate.png',
         title:'Real Estate',
         subtext:'Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invests in rented buildings in the US.',
         history:'14% Per Annum',
@@ -30,7 +30,7 @@ export const Asset =[
     },
     {
         bgColor:'#dafcf8',
-        img:'/Public/Images/income.png',
+        img:'/Images/income.png',
         title:'Stocks',
         subtext:'We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks.',
         history:'14% Per Annum',
@@ -44,51 +44,51 @@ export const Investors = [
     {
     reviews:'Like everyone, I want to be protected from currency fluctuations and Rise helps me with that. The fixed income and real estate asset classes are my preferred things about Rise. I 💚 seeing how my returns perform on a daily basis. It demonstrates safety and also puts me at a lower risk of losing money!',
     name:'Babajide',
-    img:'/Public/Images/babajide.png',    
+    img:'/Images/babajide.png',    
     },
     {
         reviews:'I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.',
         name:'Jesse',
-        img:'/Public/Images/jesse.png',    
+        img:'/Images/jesse.png',    
     },
     {
         reviews:'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
         name:'Lade',
         attr:'UX Researcher',
-        img:'/Public/Images/lade.png',    
+        img:'/Images/lade.png',    
     },
     {
         reviews:'I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.',
         name:'Jesse',
-        img:'/Public/Images/jesse.png',    
+        img:'/Images/jesse.png',    
     },
     {
         reviews:'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
         name:'Lade',
         attr:'UX Researcher',
-        img:'/Public/Images/lade.png',    
+        img:'/Images/lade.png',    
     },
     {
         reviews:'I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.',
         name:'Jesse',
-        img:'/Public/Images/jesse.png',    
+        img:'/Images/jesse.png',    
     },
     {
         reviews:'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
         name:'Lade',
         attr:'UX Researcher',
-        img:'/Public/Images/lade.png',    
+        img:'/Images/lade.png',    
     },
     {
         reviews:'I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.',
         name:'Jesse',
-        img:'/Public/Images/jesse.png',    
+        img:'/Images/jesse.png',    
     },
     {
         reviews:'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
         name:'Lade',
         attr:'UX Researcher',
-        img:'/Public/Images/lade.png',    
+        img:'/Images/lade.png',    
     },
 ]
 
