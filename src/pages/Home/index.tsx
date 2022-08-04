@@ -59,7 +59,7 @@ const Home = () => {
                     <Button
                       title="Download on the"
                       subtitle="Play Store"
-                      prefixIcon={<img src="/Public/Vectors/apple-fill.svg" />}
+                      prefixIcon={<img src="/Vectors/apple-fill.svg" />}
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
                     />
@@ -69,7 +69,7 @@ const Home = () => {
                       title="Download on the "
                       subtitle="Apple Store"
                       prefixIcon={
-                        <img src="/Public/Vectors/google-play-fill.svg" />
+                        <img src="/Vectors/google-play-fill.svg" />
                       }
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
@@ -79,13 +79,13 @@ const Home = () => {
               </div>
               <div className="w-full max-w-max">
                 <img
-                  src="/Public/Images/riseAppPhone.png"
+                  src="/Images/riseAppPhone.png"
                   alt=""
                   className="w-[16.01716rem] h-[30.0375rem] drop-shadow-[0_1.60087px_16.0089px_rgba(53,71,87,0.15)] md:text-left riseVestApp"
                 />
               </div>
             </div>
-         {/* <div className="animated-area absolute top-0 w-[85%] lg:h-[11%] md:h-[11%] h-[16%]">
+         <div className="animated-area absolute top-0 w-[85%] lg:h-[11%] md:h-[11%] h-[16%]">
               <div className="animated-box">
                 <li></li>
                 <li></li>
@@ -98,7 +98,7 @@ const Home = () => {
                 <li></li>
                 <li></li>
               </div>
-         </div> */}
+         </div>
           </div>
         </section>
 
@@ -166,12 +166,12 @@ const Home = () => {
               </div>
            </div>
              <div className="order-1 flex justify-center lg:max-w-[100%] md:max-w-[100%] lg:order-2 md:order-2">
-             <img src="/Public/Vectors/FirstAnimie.svg" alt="" />             
+             <img src="/Vectors/FirstAnimie.svg" alt="" />             
              </div>
             
             </div>
             <div className="grid lg:grid-cols-[1fr,1fr] ">
-              <img src="/Public/Vectors/SecondAnemie.svg" alt="" />
+              <img src="/Vectors/SecondAnemie.svg" alt="" />
               <div className="flex flex-col justify-center">
                 <div className="lg:max-w-[450px] md:max-w-[450px] ">
 
@@ -234,7 +234,7 @@ const Home = () => {
                 </div>
                 </div>
               </div>
-              <img src="/Public/Vectors/ThirdAnimie.svg" alt="" className=" order-1  sm:order-5" />
+              <img src="/Vectors/ThirdAnimie.svg" alt="" className=" order-1  sm:order-5" />
             </div>
             <div className="grid sm:grid-cols-[1fr,1fr] ">
             <div className="bg-red-300 grid place-items-center h-full">
@@ -313,7 +313,7 @@ const Home = () => {
         <div className="container">
           <div className=" flex flex-col sm:flex-row sm:lg:justify-between gap-[3rem] items-center py-20">
             <img
-              src="/Public/Images/buildwelth.png"
+              src="/Images/buildwelth.png"
               alt=""
               className="w-[24rem] h-[33rem] ml-8"
             />
@@ -409,7 +409,7 @@ const Home = () => {
            </div>
           </div>         
          <div className=" sm:w-[45%]">
-         <img src="/Public/Images/joinedImg.png" alt="" className="object object-cover"/>
+         <img src="/Images/joinedImg.png" alt="" className="object object-cover"/>
          </div>         
          </div>           
       </section>

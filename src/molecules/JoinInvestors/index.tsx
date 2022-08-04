@@ -14,8 +14,7 @@ const [ref, inView] = useInView({
 
 
   useEffect(()=>{
-  //   const jointInvestors = gsap.timeline()
-  //  jointInvestors.fromTo('.jointInvestor', {yPercent:0, opacity:0, stagger:2},{yPercent:0, opacity:1, delay:5 })
+  
       gsap.from('.title', { duration:5, y:1500, opacity:0, ease:Power3.easeInOut,stagger:0.3, scrollTrigger:{
       trigger:'.title',
       start:'top 90%',
@@ -73,7 +72,7 @@ gsap.from('.img', {
                     <Button
                       title="Download on the"
                       subtitle="Play Store"
-                      prefixIcon={<img src="/Public/Vectors/apple-fill.svg" />}
+                      prefixIcon={<img src="/Vectors/apple-fill.svg" />}
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
                     />
@@ -83,7 +82,7 @@ gsap.from('.img', {
                       title="Download on the "
                       subtitle="Apple Store"
                       prefixIcon={
-                        <img src="/Public/Vectors/google-play-fill.svg" />
+                        <img src="/Vectors/google-play-fill.svg" />
                       }
                       customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
                       href="https://play.google.com/store/apps/details?id=com.rise.mobile"
@@ -93,7 +92,7 @@ gsap.from('.img', {
               </div>
               <div
              className=" img w-[30%] h-full top-[40px] absolute right-0 bottom-[60px]">
-           <img  src="/Public/Images/riseAppPhone.png" alt=""  className="object-contain  jesse top-0  overflow-hidden" />
+           <img  src="/Images/riseAppPhone.png" alt=""  className="object-contain  jesse top-0  overflow-hidden" />
            </div>
             </div>
          </div>
