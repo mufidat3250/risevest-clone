@@ -1,138 +1,129 @@
-.grow{
-    @apply relative;
+.grow {
+  @apply relative;
 
-    &:after{
-        @apply rounded-full;
-        content: '';
-        position: absolute;
-        height: 10px;
-        width: 10px;
-        background-color: #2f98a0;
-        right:-10px;
-        bottom:30px
-    }
-
+  &:after {
+    @apply rounded-full;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #2f98a0;
+    right: -10px;
+    bottom: 30px;
+  }
 }
-.img{
-    @apply h-[100%] w-[100%]
+.img {
+  @apply h-[100%] w-[100%];
 }
-.riseVestApp{
-    @apply overflow-hidden;
-animation: rise 3s ease infinite alternate;
-
+.imgs {
+  width: auto;
+  height: auto;
+}
+.riseVestApp {
+  @apply overflow-hidden;
+  animation: rise 3s ease infinite alternate;
 }
 @keyframes rise {
-
-    0%{
-transform:translateY(15px);
-
-    }
-    100%{
-transform:translateY(-15px);
-
-    }
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
-.card-wrapper{
-    @apply min-h-[14rem] flex justify-between flex-grow;
-    overflow: hidden;
-    box-shadow: 0px 34px 14px rgb(64 187 195 / 15%);
-    .card-img {
-        @apply flex
-    }
+.card-wrapper {
+  @apply min-h-[14rem] flex justify-between flex-grow;
+  overflow: hidden;
+  box-shadow: 0px 34px 14px rgb(64 187 195 / 15%);
+  .card-img {
+    @apply flex;
+  }
 }
 
-.section{
-    height: 100vh;
-    width:100%;
+.section {
+  height: 100vh;
+  width: 100%;
 }
 
-.box{
-    @apply flex justify-center items-center bg-[cornflowerblue] text-[red] w-[31.25rem] h-[15.625rem]; 
+.box {
+  @apply flex justify-center items-center bg-[cornflowerblue] text-[red] w-[31.25rem] h-[15.625rem];
 }
-.isVisible{
-    @apply flex justify-center items-center absolute top-0 w-full p-[2.5rem];
+.isVisible {
+  @apply flex justify-center items-center absolute top-0 w-full p-[2.5rem];
 }
-.direction{
-    background-color: red;
+.direction {
+  background-color: red;
 }
-.animated-box{
-    @apply w-full  h-full overflow-hidden absolute left-0;
+.animated-box {
+  @apply w-full  h-full overflow-hidden absolute left-0;
 }
-.animated-box li{
-    @apply list-none w-[1.875rem] h-[1.875rem] block rounded-full bg-[#d4eded] absolute bottom-[-9.375rem] -z-10;
-    animation: animation 10s linear infinite;
-  
+.animated-box li {
+  @apply list-none w-[1.875rem] h-[1.875rem] block rounded-full bg-[#d4eded] absolute bottom-[-9.375rem] -z-10;
+  animation: animation 10s linear infinite;
 }
-.animated-box li:nth-child(1){
-    right: 40%;
-    height: 50px;
-    width:50px;
-    animation-delay: 2s;
-    transition:ease-in-out;
-
+.animated-box li:nth-child(1) {
+  right: 40%;
+  height: 50px;
+  width: 50px;
+  animation-delay: 2s;
+  transition: ease-in-out;
 }
-.animated-box li:nth-child(2){
-    right:70%;
-    height: 100px;
-    width:100px;
-    animation-delay: 10s;
-
+.animated-box li:nth-child(2) {
+  right: 70%;
+  height: 100px;
+  width: 100px;
+  animation-delay: 10s;
 }
-.animated-box li:nth-child(3){
-    right: 60%;
-    height: 20px;
-    width:20px;
-    animation-delay: 7s;
-
+.animated-box li:nth-child(3) {
+  right: 60%;
+  height: 20px;
+  width: 20px;
+  animation-delay: 7s;
 }
-.animated-box li:nth-child(4){
-    right: 40%;
-    height: 50px;
-    width:50px;
-    animation-delay: 4s;
-
+.animated-box li:nth-child(4) {
+  right: 40%;
+  height: 50px;
+  width: 50px;
+  animation-delay: 4s;
 }
-.animated-box li:nth-child(5){
-    right: 30%;
-    height: 50px;
-    width:50px;
-    animation-delay: 3s;
-
+.animated-box li:nth-child(5) {
+  right: 30%;
+  height: 50px;
+  width: 50px;
+  animation-delay: 3s;
 }
-.animated-box li:nth-child(6){
-    right: 20%;
-    height: 50px;
-    width:50px;
-    animation-delay: 4.5s;
+.animated-box li:nth-child(6) {
+  right: 20%;
+  height: 50px;
+  width: 50px;
+  animation-delay: 4.5s;
 }
 @keyframes animation {
-    100%{
-        transform: translateY(-800px);
-        opacity: 0.5;
-    }
+  100% {
+    transform: translateY(-800px);
+    opacity: 0.5;
+  }
 }
-@media (max-width:768px) {
-    .home-container{    
-        @apply w-[100%];
-    }
-    .navtab{
-        @apply bg-red-400 absolute top-0   ;
-        // visibility: hidden;                           
-    }
-    .dropdownModal{
-        @apply hidden;
-        // z-index: 1;
-    }
-    .riseVestApp{
-        @apply overflow-hidden;
+@media (max-width: 768px) {
+  .home-container {
+    @apply w-[100%];
+  }
+  .navtab {
+    @apply bg-red-400 absolute top-0;
+    // visibility: hidden;
+  }
+  .dropdownModal {
+    @apply hidden;
+    // z-index: 1;
+  }
+  .riseVestApp {
+    @apply overflow-hidden;
     animation: none;
-    
-    }
-
+  }
 }
 
-.svg{
-    height: 95%;
-    width: 95%;
+.svg {
+  height: 95%;
+  width: 95%;
 }

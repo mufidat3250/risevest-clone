@@ -124,10 +124,6 @@ export let productData = [
           {key: 'RETURNS', value: 'Returns'},
           {key: 'ACC', value: 'Acc_Returns'},
       ],
-    //   heading:[
-    //        'Year', 'Savings', 'Investment', 'Returns', 'Acc_Returns'
-    //   ],
-
       body:[
           {
             year: '2023',

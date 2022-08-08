@@ -1,25 +1,23 @@
-.active-tab{
+.active-tab {
   @apply relative;
-  background:pink;
-  
-  &:after{
+  background: pink;
+
+  &:after {
     @apply h-[10px] w-[10px] absolute bg-[#0898a0] rounded-full bottom-[-10];
-    content: '';
+    content: "";
     bottom: -10px;
     left: 40%;
   }
-  
-};
+}
 
-.rise{
+.rise {
   transition-delay: 5s;
-  transition:  5s ease-in;
+  transition: 5s ease-in;
   transform: translateY(300%);
   cursor: pointer;
-
 }
-.fall{
-  transition:  1s ease-in-out;
+.fall {
+  transition: 1s ease-in-out;
   transition-delay: 3s;
   transform: translateY(0%);
   cursor: pointer;
@@ -27,14 +25,32 @@
 }
 
 @keyframes top {
-  0%{
-  transform: translateY(350%);
-  transition-duration: 3s;
-  transition-delay: 5s;
+  0% {
+    transform: translateY(350%);
+    transition-duration: 3s;
+    transition-delay: 5s;
   }
-  100%{
-  transform: translateY(0%);
- 
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media (min-width: 550px) {
+  .nav {
+    display: none;
+    background-color: red;
+  }
+}
 
+.animate {
+  margin-top: "-10px";
+  position: relative;
+  animation: reveal 5s linear;
+}
+@keyframes reveal {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 0px;
   }
 }
