@@ -1,5 +1,5 @@
 import React from 'react'
-import Landingpage from '../../Layout/Landingpage'
+import Landingpage from '../../Layout/Index'
 
 const FAQs = () => {
   return (

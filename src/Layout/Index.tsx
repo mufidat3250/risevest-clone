@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router';
 import DropDownModal from '../atom/DropDownModal';
 import Logo from '../atom/Vectors/Logo';
 import './LandingPage.scss'
-import {productData} from '../../src/data'
+import {productData} from '../data'
 import HandBugger from '../atom/Vectors/HandBugger'
 // import { Freshchat } from 'reactjs-freshchat';
+// @ts-ignore
 import FreshChat from "react-freshchat";
 
 // import 'reactjs-freshchat/dist/index.css'
@@ -88,10 +89,6 @@ const Landingpage = ({children, bgColor}:props) => {
      }}/>
      <div className={` md:block ${toggleNav ?'block inherit p-0 m-0 w-full  h-screen top-0 left-0':'navtab hidden'}`}>      
      <div className={`${toggleNav ? 'w-screen absolute top-0 -left-0 bg-white text-left  h-screen flex flex-col overflow-hidden max-w-[100%] mx-auto':'flex md:flex-row space-x-[2rem] md:relative'}`}>
-    
-   {/* <div className='flex  justify-end mb-[30px] '>
-   <img src="/Vectors/close-line.svg" alt="" className='block h-8 w-8 md:hidden cursor-pointer  justify-end mt-3 ' onClick={()=>setToggleNav(false)} />
-   </div> */}
      <div className='md:flex md:space-x-3 space-y-5 md:space-y-0 '>
      {tabs.map(({title, url, id}, index)=>{    
         isActive = currentpath===url        
@@ -100,9 +97,7 @@ const Landingpage = ({children, bgColor}:props) => {
       </p>
     })}
      </div>
-    {/* </div> */}
-     
-    
+  
     <div className='absolute bottom-[-12.5rem] left-[-1rem]'>
     <DropDownModal 
       showModal={product}
@@ -173,48 +168,3 @@ const Landingpage = ({children, bgColor}:props) => {
 
 export default Landingpage
 
-
-// {/* <div className={`${toggleNav ? 'w-screen absolute top-0 -left-0 bg-white text-left  h-screen flex flex-col overflow-hidden max-w-[100%] mx-auto':'flex md:flex-row space-x-[2rem] md:relative'}`}>
-    
-// {/* <div className=' bg-red-400 flex flex-col justify-between md:flex md:flex-row'> */}
-// <div className='flex  justify-end mb-[30px] '>
-// <img src="/Public/Vectors/close-line.svg" alt="" className='block h-8 w-8 md:hidden cursor-pointer  justify-end' onClick={()=>setToggleNav(false)} />
-// </div>
-//  <div className='md:flex md:space-x-3 space-y-5 md:space-y-0 '>
-//  {tabs.map(({title, url, id}, index)=>{    
-//     isActive = currentpath===url        
-//   return <p className={`text-primary cursor-pointer font-[700]${ activeTab && isActive ? 'md:active-tab relative after:absolute after:h-[10px] after:w-[10px] md:after:bg-[#0898a0] after:rounded-full after:bottom-[-10px] after:left-[40%]':''}`} key={index} onClick={()=> handleTabClick(title, url)}>
-//     {title} 
-//   </p>
-// })}
-//  </div>
-// {/* </div> */}
- 
-
-// <div className='absolute bottom-[-12.5rem] left-[-1rem]'>
-// <DropDownModal 
-//   showModal={product}
-//   closeModal={setProduct}
-// >    
-// <div className=' dropdownModal space-y-[1rem]'>
-// {productData.map(({title, link}, index)=>{
-// let  ActiveProduct:boolean;
-//   ActiveProduct= currentpath===link
-//   return <a 
-//    onClick={()=>{
-//     setActive(title)
-//     if(link === 'product') {
-//       navigate(`/${link}`)
-//       return
-//     }
-//     navigate(`/product/${link}`)
-    
-//   }} className={`flex justify-between text-[16px] items-center cursor-pointer text-[#55b4b7] font-bold`} key={index}><span >{title}</span><span className={Active==title?'h-[10px] w-[10px] rounded-full bg-[#2f98a0]':''}></span></a>
-// })}
-// </div>
-
-// </DropDownModal>
-// </div>
-// </div>
-//   */}
- 

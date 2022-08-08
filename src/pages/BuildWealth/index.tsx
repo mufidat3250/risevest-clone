@@ -4,7 +4,7 @@ import LineChart from '../../atom/Chart/BarChart'
 import Input from '../../atom/Input/Input'
 import ArrowDown from '../../atom/Vectors/ArrowDown'
 import Select from '../../atom/Vectors/Select/Select'
-import Landingpage from '../../Layout/Landingpage'
+import Landingpage from '../../Layout/Index'
 import Table from '../../molecules/Table/Table'
 
 const BuildWealth = () => {

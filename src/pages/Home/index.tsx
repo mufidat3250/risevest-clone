@@ -1,6 +1,6 @@
 import H1 from "../../atom/Typography/H1";
 import "./HomeStyle.scss";
-import Landingpage from "../../Layout/Landingpage";
+import Landingpage from "../../Layout/Index";
 import Button from "../../atom/Button";
 import data, { Asset as asset, Investors } from "../../data";
 import Asset from "../../atom/Asset/Asset";
@@ -412,9 +412,9 @@ const Home = () => {
         </div>
         <div className="hidden max-w-[95%] sm:block ">
           <Sliders>
-            {Investors.map(({ reviews, name, img, attr }) => {
+            {Investors.map(({ reviews, name, img, attr }, index) => {
               return (
-                <div className="card-wrapper">
+                <div className="card-wrapper" key={`investors${index}`}>
                   <div className="flex flex-col justify-between flex-grow h-[17rem] p-4">
                     <p className="leading-7 text-[16px]">{reviews}</p>
                     <div className="card-img flex items-center gap-x-[1rem]">
@@ -437,7 +437,7 @@ const Home = () => {
 
         <div className=" flex flex-col gap-8 sm:hidden">
           {carosel.map((carosel, index) => (
-            <div className="">
+            <div className="" key={`carosel${index}`}>
               <div className="flex flex-col gap-2 flex-grow p-4 shadow-4xl ">
                 <p className="leading-7 text-[12px]">{carosel.discription}</p>
                 <div className="card-img flex items-center gap-x-[1rem]">
