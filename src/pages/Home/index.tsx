@@ -1,6 +1,6 @@
 import H1 from "../../atom/Typography/H1";
 import "./HomeStyle.scss";
-import Landingpage from "../../Layout/Index";
+import Landingpage from "../../Layout/index";
 import Button from "../../atom/Button";
 import data, { Asset as asset, Investors } from "../../data";
 import Asset from "../../atom/Asset/Asset";

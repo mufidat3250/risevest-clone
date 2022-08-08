@@ -57,7 +57,7 @@ const Nav = ({ active_Tab, tabs, currentPath, setActive = () => {} }: tab) => {
             openNav ? "-ml-[5px]" : "ml-[600px] mx-4"
           }`}
         >
-          <div className="flex items-center w-full justify-between mt-4">
+          <div className="flex items-center w-full justify-between mt-12">
             <RiseLogo color="#45b1b7" />
             <AiOutlineClose
               color="#45b1b7"
@@ -73,9 +73,13 @@ const Nav = ({ active_Tab, tabs, currentPath, setActive = () => {} }: tab) => {
             className="space-y-4 text-[#45b1b7]  font-bold"
           >
             {tabs.map((tab: any, index: number) => (
-              <motion.div className={` hover:text-black`} key={tab.id}>
+              <div
+                className={` hover:text-black`}
+                key={tab.id}
+                onClick={() => setOpenNav(false)}
+              >
                 {tab.title}
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>
