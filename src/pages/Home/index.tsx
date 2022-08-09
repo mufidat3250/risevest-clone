@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
 
-        <section className="lg:max-w-[90%] container lg:container-md md:max-w-[95%] md:mx-auto grid grid-col repeat(4,1fr) space-y-[1.5rem]">
+        <section className="lg:max-w-[90%] container lg:container-md md:max-w-[95%] md:mx-auto grid grid-col repeat(4,1fr) space-y-[1.5rem]  mx-auto w-[90%]">
           <div className=" grid md:grid-cols-[1fr,1fr]  grid-col-[1fr] mt-12">
             <div className="order-2 lg:order-1 md:order-1 w-full grid place-items-center ">
               <div className=" flex flex-col items-center sm:items-start w-[95%] sm:w-full  sm:flex-col sm:justify-start">
@@ -213,7 +213,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="grid mx-1   sm:grid-cols-[1fr,1fr] ">
+          <div className="grid mx-1 sm:grid-cols-[1fr,1fr] ">
             <div className="flex flex-col justify-center order-4">
               <div className="max-w-[450px]">
                 <h2 className="text-[#2d2d2d] text-[2rem] font-semibold tracking-[-0.05rem] text-center sm:text-left mb-2">
@@ -261,7 +261,7 @@ const Home = () => {
                   We remember so you dont have to
                 </h2>
                 <div className="flex justify-center sm:justify-start">
-                  <p className="max-w-[320px] text-[#2d2d2d] sm:max-w-[500px]">
+                  <p className="max-w-[320px] text-[#2d2d2d] sm:max-w-[500px] text-center sm:text-left">
                     Our Auto-invest feature makes it easy to stay consistent,
                     even when you forget. Set a funding amount, frequency and
                     payment method and Rise will automatically fund your
@@ -292,7 +292,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <div className="  container">
+        <div className=" mx-auto w-[90%] sm:mx-auto sm:w-[90%]">
           <div className="space-y-4 py-10">
             <div className="flex justify-center">
               <H1
@@ -309,7 +309,7 @@ const Home = () => {
               It’s your money, choose where you invest it
             </p>
           </div>
-          <section className="grid  grid-cols-1 lg:grid-cols-[repeat(3,1fr)] mx-3  gap-8">
+          <section className="grid  grid-cols-1 lg:grid-cols-[repeat(3,1fr)]  gap-8">
             {asset.map(
               (
                 { img, title, subtext, history, riskLevel, learn, bgColor },
@@ -329,14 +329,14 @@ const Home = () => {
             )}
           </section>
         </div>
-        <div className="container">
+        <div className="mx-auto w-[90%] sm:mx-auto sm:w-[90%]">
           <div className=" flex flex-col sm:flex-row sm:lg:justify-between gap-[3rem] items-center py-20">
             <img
               src="/Images/buildwelth.png"
               alt=""
-              className="w-[24rem] h-[33rem] ml-8"
+              className="w-[24rem] h-[33rem]"
             />
-            <div className=" sm:mr-8 space-y-[15px] w-[100%]">
+            <div className=" sm:mr-8 space-y-[15px] w-[50%]">
               <p className="  text-base text-center sm:text-left  sm:text-sm font-bold  ">
                 The Rise App
               </p>
@@ -364,15 +364,11 @@ const Home = () => {
             <div
               className="h-[287px] blur-[40px] bg-[#fff4f0]"
               style={{ mixBlendMode: "multiply" }}
-            >
-              jjj
-            </div>
+            ></div>
             <div
               className="h-[287px] blur-[40px] bg-[#f6e4f0]"
               style={{ mixBlendMode: "multiply" }}
-            >
-              uujj
-            </div>
+            ></div>
           </div>
           <div className="self-center  space-y-[1rem]">
             <h2 className="text-[2rem] font-semibold text-center">
@@ -456,7 +452,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section className="container">
+      <section className="lg:mx-auto sm:w-[80%] mx-auto w-[95%]">
         <div className=" flex flex-col sm:flex-row items-center sm:items-center sm:justify-between">
           <div className="sm:ml-8 space-y-[1.5rem]">
             <h2 className="text-center sm:text-left text-4xl font-semibold ">
@@ -489,10 +485,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="lg:mx-auto w-[80%]">
+      <section className="lg:mx-auto sm:w-[80%] mx-auto w-[90%]">
         <JoinInvestors />
       </section>
-      <div className="pb-[10rem] h-full">
+      <div className=" h-full">
         <Footer />
       </div>
     </Landingpage>

@@ -1,102 +1,169 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Button from '../../atom/Button';
-import { useInView } from 'react-intersection-observer';
-import { gsap, Power3,  } from 'gsap';
+import Button from "../../atom/Button";
+import { useInView } from "react-intersection-observer";
+import { gsap, Power3 } from "gsap";
 
-gsap.registerPlugin()
+gsap.registerPlugin();
 
 const JoinInvestors = () => {
-    const control = useAnimation()
-const [ref, inView] = useInView({
-  threshold:1
-})
+  const control = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 1,
+  });
 
-
-  useEffect(()=>{
-  
-      gsap.from('.title', { duration:5, y:1500, opacity:0, ease:Power3.easeInOut,stagger:0.3, scrollTrigger:{
-      trigger:'.title',
-      start:'top 90%',
-      end:'bottom 100%',
-      markers:true,
-      toggleActions:'restart complete reverse, reset'
-    } })
-  gsap.from('.join', {
-     y:1500, duration:5, opacity: 0, scrollTrigger:{
-       trigger:'.join',
-       start:'top 90%',
-       end:'bottom 100%',
-       markers:true,
-       toggleActions:'restart complete, reverse pause'
-     } 
-  })
-  gsap.from('.dollar', {
-    y:1500, duration:5, opacity: 0, scrollTrigger:{
-      trigger:'.dollar',
-      start:'top 90%',
-      end:'bottom 100%',
-      markers:true,
-      toggleActions:'restart complete, reverse pause'
-    } 
- })
- gsap.from('.button', {
-  y:1500, duration:5, opacity: 0, scrollTrigger:{
-    trigger:'.button',
-    start:'top 90%',
-    end:'bottom 100%',
-    markers:true,
-    toggleActions:'restart complete, reverse pause'
-  } 
-})
-gsap.from('.img', {
-  y:1500, duration:5, opacity: 0, scrollTrigger:{
-    trigger:'.img',
-    start:'top 90%',
-    end:'bottom 100%',
-    markers:true,
-    toggleActions:'restart complete, reverse pause'
-  } 
-})
-  },[])
+  useEffect(() => {
+    gsap.from(".title", {
+      duration: 5,
+      y: 1500,
+      opacity: 0,
+      ease: Power3.easeInOut,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".title",
+        start: "top 90%",
+        end: "bottom 100%",
+        markers: true,
+        toggleActions: "restart complete reverse, reset",
+      },
+    });
+    gsap.from(".join", {
+      y: 1500,
+      duration: 5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".join",
+        start: "top 90%",
+        end: "bottom 100%",
+        markers: true,
+        toggleActions: "restart complete, reverse pause",
+      },
+    });
+    gsap.from(".dollar", {
+      y: 1500,
+      duration: 5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".dollar",
+        start: "top 90%",
+        end: "bottom 100%",
+        markers: true,
+        toggleActions: "restart complete, reverse pause",
+      },
+    });
+    gsap.from(".button", {
+      y: 1500,
+      duration: 5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".button",
+        start: "top 90%",
+        end: "bottom 100%",
+        markers: true,
+        toggleActions: "restart complete, reverse pause",
+      },
+    });
+    gsap.from(".img", {
+      y: 1500,
+      duration: 5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".img",
+        start: "top 90%",
+        end: "bottom 100%",
+        markers: true,
+        toggleActions: "restart complete, reverse pause",
+      },
+    });
+  }, []);
 
   return (
-    <div className="hidden sm:block sm:mx-8 py-20  z-10 overflow-hidden  ">
-            <div className="py-20 bg-[#e6f5f6] px-16 rounded-xl relative overflow-hidden" ref={ref}>
-              <div className='jointInvestor' >
-                <p className="mb-[1rem] title">Download The Rise App</p>
-                <h2 className="font  text-base font-semibold sm:text-4xl max-w-[500px] mb-[1.5rem] join ">Join our 200,000+ users investing and setting long term goals!</h2>
-                <p className="mb-[1rem] dollar">Dollar investments that help you grow</p>
-                <div className="flex gap-4">
-                <div className="w-[160px] button">
-                    <Button
-                      title="Download on the"
-                      subtitle="Play Store"
-                      prefixIcon={<img src="/Vectors/apple-fill.svg" />}
-                      customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
-                      href="https://play.google.com/store/apps/details?id=com.rise.mobile"
-                    />
-                  </div>
-                  <div className="w-[auto] button">
-                    <Button
-                      title="Download on the "
-                      subtitle="Apple Store"
-                      prefixIcon={
-                        <img src="/Vectors/google-play-fill.svg" />
-                      }
-                      customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
-                      href="https://play.google.com/store/apps/details?id=com.rise.mobile"
-                    />
-                  </div>
-                </div>
+    <>
+      <div className="hidden sm:block  py-20  z-10 overflow-hidden  ">
+        <div
+          className="py-20 bg-[#e6f5f6] px-16 rounded-xl relative overflow-hidden"
+          ref={ref}
+        >
+          <div className="jointInvestor">
+            <p className="mb-[1rem] title">Download The Rise App</p>
+            <h2 className="font  text-base font-semibold sm:text-4xl max-w-[500px] mb-[1.5rem] join ">
+              Join our 200,000+ users investing and setting long term goals!
+            </h2>
+            <p className="mb-[1rem] dollar">
+              Dollar investments that help you grow
+            </p>
+            <div className="flex gap-4">
+              <div className="w-[160px] button">
+                <Button
+                  title="Download on the"
+                  subtitle="Play Store"
+                  prefixIcon={<img src="/Vectors/apple-fill.svg" />}
+                  customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
+                  href="https://play.google.com/store/apps/details?id=com.rise.mobile"
+                />
               </div>
-              <div
-             className=" img w-[30%] h-full top-[40px] absolute right-0 bottom-[60px]">
-           <img  src="/Images/riseAppPhone.png" alt=""  className="object-contain  jesse top-0  overflow-hidden" />
-           </div>
+              <div className="w-[auto] button">
+                <Button
+                  title="Download on the "
+                  subtitle="Apple Store"
+                  prefixIcon={<img src="/Vectors/google-play-fill.svg" />}
+                  customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
+                  href="https://play.google.com/store/apps/details?id=com.rise.mobile"
+                />
+              </div>
             </div>
-         </div>
-  )
-}
+          </div>
+          <div className=" img w-[30%] h-full top-[40px] absolute right-0 bottom-[60px]">
+            <img
+              src="/Images/riseAppPhone.png"
+              alt=""
+              className="object-contain  jesse top-0  overflow-hidden"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#e6f5f6] w-full my-20 relative h-[32rem] overflow-hidden rounded-[16px] sm:hidden">
+        <div className="pt-[20px] px-4">
+          <p className="text-center text-primary mb-4 ">
+            Download the Rise App
+          </p>
+          <h2 className=" font-bold text-2xl  text-center leading-10">
+            Join our 200,000+users investing and setting long term goals!
+          </h2>
+          <p className=" text-lg text-center my-8">
+            Dollar investments that help you grow
+          </p>
+        </div>
+        <div className="flex justify-between">
+          <div className="-ml-4">
+            <Button
+              title="Download on the "
+              subtitle="Apple Store"
+              prefixIcon={<img src="/Vectors/google-play-fill.svg" />}
+              customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
+              href="https://play.google.com/store/apps/details?id=com.rise.mobile"
+            />
+          </div>
+          <div className="-mr-4">
+            <Button
+              title="Download on the"
+              subtitle="Play Store"
+              prefixIcon={<img src="/Vectors/apple-fill.svg" />}
+              customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
+              href="https://play.google.com/store/apps/details?id=com.rise.mobile"
+            />
+          </div>
+        </div>
+        <div className=" flex justify-center items-center mt-10">
+          <img
+            src="/Images/riseAppPhone.png"
+            alt=""
+            className="object-contain w-[60%]"
+          />
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default JoinInvestors
+export default JoinInvestors;
