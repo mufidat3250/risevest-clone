@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
 
-        <section className="lg:max-w-[90%] container lg:container-md md:max-w-[95%] md:mx-auto grid grid-col repeat(4,1fr) space-y-[1.5rem]  mx-auto w-[90%]">
+        <section className="lg:max-w-[80%] container md:max-w-[95%] sm:mx-auto grid grid-col repeat(4,1fr) space-y-[1.5rem]  mx-auto w-[90%]">
           <div className=" grid md:grid-cols-[1fr,1fr]  grid-col-[1fr] mt-12">
             <div className="order-2 lg:order-1 md:order-1 w-full grid place-items-center ">
               <div className=" flex flex-col items-center sm:items-start w-[95%] sm:w-full  sm:flex-col sm:justify-start">
@@ -292,7 +292,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <div className=" mx-auto w-[90%] sm:mx-auto sm:w-[90%]">
+        <div className=" mx-auto w-[90%] sm:mx-auto sm:w-[80%] ">
           <div className="space-y-4 py-10">
             <div className="flex justify-center">
               <H1
@@ -329,7 +329,7 @@ const Home = () => {
             )}
           </section>
         </div>
-        <div className="mx-auto w-[90%] sm:mx-auto sm:w-[90%]">
+        <div className="mx-auto w-[90%] sm:mx-auto sm:w-[80%]">
           <div className=" flex flex-col sm:flex-row sm:lg:justify-between gap-[3rem] items-center py-20">
             <img
               src="/Images/buildwelth.png"
@@ -337,7 +337,7 @@ const Home = () => {
               className="w-[24rem] h-[33rem]"
             />
             <div className=" sm:mr-8 space-y-[15px] w-[50%]">
-              <p className="  text-base text-center sm:text-left  sm:text-sm font-bold  ">
+              <p className="  text-base text-center sm:text-left  sm:text-sm font-bold">
                 The Rise App
               </p>
               <h3 className=" text-2xl sm:text-4xl font-semibold text-center sm:text-left ">
