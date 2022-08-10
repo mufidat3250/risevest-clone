@@ -17,72 +17,8 @@ const JoinInvestors = () => {
   const [ref, inView] = useInView();
 
   useEffect(() => {
-    gsap.from(".title", {
-      duration: 5,
-      y: 1500,
-      opacity: 0,
-      ease: Power3.easeInOut,
-      stagger: 0.3,
-      scrollTrigger: {
-        trigger: ".title",
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-        toggleActions: "restart complete reverse, reset",
-      },
-    });
-    gsap.from(".join", {
-      y: 1500,
-      duration: 5,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".join",
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-        toggleActions: "restart complete, reverse pause",
-      },
-    });
-    gsap.from(".dollar", {
-      y: 1500,
-      duration: 5,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".dollar",
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-        toggleActions: "restart complete, reverse pause",
-      },
-    });
-    gsap.from(".button", {
-      y: 1500,
-      duration: 5,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".button",
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-        toggleActions: "restart complete, reverse pause",
-      },
-    });
-    gsap.from(".img", {
-      y: 1500,
-      duration: 5,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".img",
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-        toggleActions: "restart complete, reverse pause",
-      },
-    });
-
     if (inView) {
       controls.start("animate");
-      console.log("i am visible");
     }
   }, [controls, inView]);
 
@@ -94,10 +30,22 @@ const JoinInvestors = () => {
           ref={ref}
         >
           <div className="jointInvestor">
-            <p className="mb-[1rem] title">Download The Rise App</p>
-            <h2 className="font  text-base font-semibold sm:text-4xl max-w-[500px] mb-[1.5rem] join ">
+            <motion.p
+              className="mb-[1rem] title text-primary"
+              variants={downloadVariant}
+              initial="hidden"
+              whileInView="visible"
+            >
+              Download The Rise App
+            </motion.p>
+            <motion.h2
+              className="font  text-base font-semibold sm:text-4xl max-w-[500px] mb-[1.5rem] join "
+              variants={joinVariant}
+              whileInView="visible"
+              initial="hidden"
+            >
               Join our 200,000+ users investing and setting long term goals!
-            </h2>
+            </motion.h2>
             <p className="mb-[1rem] dollar">
               Dollar investments that help you grow
             </p>
@@ -123,10 +71,13 @@ const JoinInvestors = () => {
             </div>
           </div>
           <div className=" img w-[30%] h-full top-[40px] absolute right-0 bottom-[60px]">
-            <img
+            <motion.img
               src="/Images/riseAppPhone.png"
               alt=""
               className="object-contain  jesse top-0  overflow-hidden"
+              variants={AppPhoneVariant}
+              initial="hidden"
+              whileInView="visible"
             />
           </div>
         </div>
@@ -166,7 +117,12 @@ const JoinInvestors = () => {
           whileInView="visible"
           initial="hidden"
         >
-          <div className="">
+          <motion.div
+            className=""
+            variants={buttonVariant}
+            initial="hidden"
+            whileInView="visible"
+          >
             <Button
               title="Download on the "
               subtitle="Apple Store"
@@ -174,7 +130,7 @@ const JoinInvestors = () => {
               customClass="!py-2 !px-4 !space-x-2 whitespace-nowrap"
               href="https://play.google.com/store/apps/details?id=com.rise.mobile"
             />
-          </div>
+          </motion.div>
           <div className="">
             <Button
               title="Download on the"
