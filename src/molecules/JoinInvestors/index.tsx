@@ -3,14 +3,18 @@ import { motion, useAnimation } from "framer-motion";
 import Button from "../../atom/Button";
 import { useInView } from "react-intersection-observer";
 import { gsap, Power3 } from "gsap";
-
+import {
+  downloadVariant,
+  joinVariant,
+  dollarInvestmentVariant,
+  buttonVariant,
+  AppPhoneVariant,
+} from "../../variant";
 gsap.registerPlugin();
 
 const JoinInvestors = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView({
-    threshold: 1,
-  });
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     gsap.from(".title", {
@@ -75,7 +79,12 @@ const JoinInvestors = () => {
         toggleActions: "restart complete, reverse pause",
       },
     });
-  }, []);
+
+    if (inView) {
+      controls.start("animate");
+      console.log("i am visible");
+    }
+  }, [controls, inView]);
 
   return (
     <>
@@ -122,20 +131,42 @@ const JoinInvestors = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#e6f5f6] w-full my-20 relative h-[32rem] overflow-hidden rounded-[16px] sm:hidden">
+      <div className="bg-[#e6f5f6] w-full my-20 relative h-[32rem] overflow-hidden rounded-[16px]  sm:hidden">
         <div className="pt-[20px] px-4">
-          <p className="text-center text-primary mb-4 ">
+          <motion.p
+            ref={ref}
+            className="text-center text-primary mb-4"
+            variants={downloadVariant}
+            whileInView="visible"
+            initial="hidden"
+          >
             Download the Rise App
-          </p>
-          <h2 className=" font-bold text-2xl  text-center leading-10">
+          </motion.p>
+          <motion.h2
+            className=" font-bold text-2xl  text-center leading-10"
+            ref={ref}
+            variants={joinVariant}
+            whileInView="visible"
+            initial="hidden"
+          >
             Join our 200,000+users investing and setting long term goals!
-          </h2>
-          <p className=" text-lg text-center my-8">
+          </motion.h2>
+          <motion.p
+            variants={dollarInvestmentVariant}
+            className=" text-lg text-center my-8"
+            whileInView="visible"
+            initial="hidden"
+          >
             Dollar investments that help you grow
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-between">
-          <div className="-ml-4">
+        <motion.div
+          className="flex justify-center gap-5"
+          variants={buttonVariant}
+          whileInView="visible"
+          initial="hidden"
+        >
+          <div className="">
             <Button
               title="Download on the "
               subtitle="Apple Store"
@@ -144,7 +175,7 @@ const JoinInvestors = () => {
               href="https://play.google.com/store/apps/details?id=com.rise.mobile"
             />
           </div>
-          <div className="-mr-4">
+          <div className="">
             <Button
               title="Download on the"
               subtitle="Play Store"
@@ -153,12 +184,15 @@ const JoinInvestors = () => {
               href="https://play.google.com/store/apps/details?id=com.rise.mobile"
             />
           </div>
-        </div>
+        </motion.div>
         <div className=" flex justify-center items-center mt-10">
-          <img
+          <motion.img
             src="/Images/riseAppPhone.png"
             alt=""
             className="object-contain w-[60%]"
+            variants={AppPhoneVariant}
+            initial="hidden"
+            whileInView="visible"
           />
         </div>
       </div>

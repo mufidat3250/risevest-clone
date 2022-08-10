@@ -336,7 +336,7 @@ const Home = () => {
               alt=""
               className="w-[24rem] h-[33rem]"
             />
-            <div className=" sm:mr-8 space-y-[15px] w-[50%]">
+            <div className=" sm:mr-8 space-y-[15px] sm:w-[50%]">
               <p className="  text-base text-center sm:text-left  sm:text-sm font-bold">
                 The Rise App
               </p>
@@ -359,6 +359,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <div className="display flex justify-between mt-[2rem]">
           <div className="w-1/4 flex flex-col">
             <div
